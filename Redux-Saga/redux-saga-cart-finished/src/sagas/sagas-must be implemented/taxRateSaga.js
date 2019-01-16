@@ -1,4 +1,4 @@
-import { take, put} from 'redux-saga/effects'
+import { take, put } from 'redux-saga/effects'
 import fetch from 'isomorphic-fetch';
 
 import {
