@@ -11,3 +11,4 @@ export { checkoutAvailabilitySaga } from './checkoutAvailabilitySaga';
 // export { checkoutAvailabilitySaga } from './checkoutAvailabilitySaga';
 // export { customerServiceAvailabilitySaga } from './customerServiceAvailabilitySaga';
 // export { checkoutSaga } from './checkoutSaga';
+export { checkoutSaga } from './checkoutSaga';

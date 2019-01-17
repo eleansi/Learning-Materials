@@ -1,7 +1,7 @@
 import { put, takeLatest, select } from 'redux-saga/effects';
 import fetch from 'isomorphic-fetch';
 
-import { SET_CART_ITEMS, FETCHED, FETCHING, INCREASE_ITEM_QUANTITY, DECREASE_ITEM_QUANTITY,  setShippingFetchStatus,
+import { SET_CART_ITEMS, FETCHED, FETCHING,SET_SHIPPING_FETCH_STATUS, INCREASE_ITEM_QUANTITY, DECREASE_ITEM_QUANTITY,  setShippingFetchStatus,
     setShippingCost } from '../actions';
 import { cartItemsSelector } from '../selectors';
 
