@@ -20,3 +20,5 @@ https://youtu.be/ORcvSkgdA58
 pbcopy  command: https://superuser.com/questions/472598/pbcopy-for-windows/1171448#1171448
 
 
+Exercise =======================
+Add ssh to github
