@@ -1,0 +1,22 @@
+UR(Useful Resources)- Asymmetric Encryption =================================================================
+
+https://www.youtube.com/watch?v=NmM9HA2MQGI
+
+https://www.youtube.com/watch?v=Yjrfm_oRO0w
+
+https://www.youtube.com/watch?v=vsXMMT2CqqE&t=
+
+https://www.youtube.com/watch?v=NF1pwjL9-DE
+
+
+SSH into a Server ===========================================================================================
+* SSH on Windows
+
+https://stackoverflow.com/questions/11771378/ssh-keygen-is-not-recognized-as-an-internal-or-external-command
+
+* How SSH works internally
+https://youtu.be/ORcvSkgdA58
+
+pbcopy  command: https://superuser.com/questions/472598/pbcopy-for-windows/1171448#1171448
+
+
