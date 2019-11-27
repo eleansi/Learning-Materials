@@ -1,0 +1,10 @@
+* Keys to Performance ============================================================================
+** Uglify JS
+
+** Tools for image compression and tips for how to make images load faster
+https://pageweight.imgix.com/
+https://99designs.com/blog/tips/image-file-types/
+https://www.sitepoint.com/gif-png-jpg-which-one-to-use/
+
+Continue from lesson 35 ... to the end of the section
+(Jumping to React/Redux development)
