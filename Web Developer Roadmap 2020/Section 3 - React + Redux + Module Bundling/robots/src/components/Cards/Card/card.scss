@@ -1,0 +1,15 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.card {
+    animation: fadeIn 1s ease-in;
+    @for $i from 1 through 20 {
+        transition-delay: $i * 0.25;
+    }
+}

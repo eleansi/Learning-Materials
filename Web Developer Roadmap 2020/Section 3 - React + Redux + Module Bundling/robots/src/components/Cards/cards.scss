@@ -1,0 +1,16 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.CardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 797px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in;
+}
