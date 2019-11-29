@@ -8,8 +8,22 @@
 }
 
 .card {
-    animation: fadeIn 1s ease-in;
-    @for $i from 1 through 20 {
-        transition-delay: $i * 0.25;
+    animation: fadeIn 0.2s ease-in;
+    // @for $i from 1 through 20 {
+    //     transition-delay: $i * 0.25;
+    // }
+    margin: .75rem;
+    flex-basis: calc(50% - 1.5rem);
+    background: #8e2de2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient( to top, #4a00e0, #8e2de2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient( to top, #4a00e0, #8e2de2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    h1 {
+        color: white;
+    }
+    p {
+        color: white;
     }
 }
