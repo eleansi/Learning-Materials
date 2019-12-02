@@ -1,0 +1,3 @@
+Continue from lesson 35 ... to the end of the section
+(Jumping to Section 4 React/Redux development)
+

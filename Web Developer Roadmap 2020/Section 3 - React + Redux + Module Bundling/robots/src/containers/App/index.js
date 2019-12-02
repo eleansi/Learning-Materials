@@ -1,37 +1,48 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import SearchComponent from '../../components/SearchComponent'; 
 import ErrorBoundry from '../../components/ErrorBoundry'; 
 import Cards from '../../components/Cards'; 
 
-class App extends Component {
-    constructor(props) {
-        super(props);
+// Actions
+import { setSearchField, fetchUsersData, requestFetchUsers } from '../../actions';
 
-        this.state = {
-            robots: [],
-            searchfield: ''
-        };
+const mapStateToProps = state =>  {
+    return { 
+        searchField: state.search.searchField,
+        users: state.users.users,
+        isPending: state.users.isPending
     }
+}
+
+const mapDispatchToProps = dispatch => {
+   return { 
+       onSearchChange: event => dispatch(setSearchField(event.target.value)),
+       requestFetchUsers: () => dispatch(requestFetchUsers()),
+   }
+}
+
+class App extends Component {
 
     componentDidMount() {
-       fetch('https://my-json-server.typicode.com/eleansi/Insta-clone/users')
-       .then(res =>  res.json())
-       .then(users => { this.setState({ robots: users })});
+        // this.props.onRequestUsers();
+        this.props.requestFetchUsers();
     }
 
-    onSearchChange = (event) => {
-        this.setState({ searchfield: event.target.value });
-    };
 
     render() {
-
-        const filteredRobots = this.state.robots.filter(robot => {
-            return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+        const { searchField, onSearchChange, users, isPending } = this.props;
+        const filteredRobots = users.filter(robot => {
+            return robot.name.toLowerCase().includes(searchField.toLowerCase());
         });
 
-        return (
+        return isPending ? (
             <div>
-                <SearchComponent searchChange={this.onSearchChange} />
+                Loading...
+            </div>
+        ) : (
+            <div>
+                <SearchComponent searchChange={onSearchChange} />
                 <ErrorBoundry>
                     <Cards cards={filteredRobots} />
                 </ErrorBoundry>
@@ -40,4 +51,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);

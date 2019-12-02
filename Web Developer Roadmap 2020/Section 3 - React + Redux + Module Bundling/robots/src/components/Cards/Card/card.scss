@@ -12,6 +12,7 @@
     // @for $i from 1 through 20 {
     //     transition-delay: $i * 0.25;
     // }
+    overflow: hidden;
     margin: .75rem;
     flex-basis: calc(50% - 1.5rem);
     background: #8e2de2;
@@ -25,5 +26,14 @@
     }
     p {
         color: white;
+    }
+    img {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -50px;
+        right: 0;
+        margin: auto auto auto 0;
     }
 }
