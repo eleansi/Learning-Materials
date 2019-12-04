@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { hot } from "react-hot-loader";
 import './app.scss';
 // Components
 import SearchComponent from '../../components/SearchComponent';
