@@ -1,3 +1,6 @@
 Continue from lesson 35 ... to the end of the section
 (Jumping to Section 4 React/Redux development)
 
+/React/Redux-Saga/redux-saga-cart-finished/node_modules
+/Web Developer Roadmap 2020/Section 3 - React + Redux + Module Bundling/robots - webpack/node_modules/
+/Web Developer Roadmap 2020/Section 3 - React + Redux + Module Bundling/robots/node_modules/

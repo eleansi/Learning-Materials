@@ -9,11 +9,11 @@ const initialState = {
 const requestUsers = (state = initialState, action = {}) => {
   switch (action.type) {
     case USERS_FETCH_PENDING:
-      return { ...state, isPending: true };
+      return Object.assign({}, state, { isPending: true });
     case USERS_FETCH_SUCCEEDED:
-      return { ...state, users: action.payload, isPending: false };
+      return  Object.assign({}, state, { users: action.payload, isPending: false });
     case USERS_FETCH_FAILED:
-      return { ...state, error: action.payload, isPending: false };
+      return  Object.assign({}, state, { error: action.payload, isPending: false });
 
     default:
       return state;
