@@ -1,6 +1,5 @@
 const path = require('path');
 
-console.log(__dirname + " " + "smuuuuuut");
 module.exports = {
     entry: [
         "./src/index.js"

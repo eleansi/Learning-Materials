@@ -1,7 +1,7 @@
 import * as sagas from './store/sagas';
 
-const initSagas = (sagaMiddleware) => {
+export const initSagas = (sagaMiddleware) => {
   Object.values(sagas).forEach(sagaMiddleware.run.bind(sagaMiddleware));
 };
 
-export default initSagas;
+// export default initSagas;

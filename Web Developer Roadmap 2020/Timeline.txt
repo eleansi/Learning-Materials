@@ -1,6 +1,10 @@
-Continue from lesson 35 ... to the end of the section
-(Jumping to Section 4 React/Redux development)
+1. Continue from lesson 35 ... to the end of the section (from 35 to 55 skipped)
 
-/React/Redux-Saga/redux-saga-cart-finished/node_modules
-/Web Developer Roadmap 2020/Section 3 - React + Redux + Module Bundling/robots - webpack/node_modules/
-/Web Developer Roadmap 2020/Section 3 - React + Redux + Module Bundling/robots/node_modules/
+2. (Jumping to Section 4 React/Redux development)
+
+3. (Finished with Section 4 React/Redux development)
+
+4. (Jumped over section 5 performance part 2) - 04.12.2019
+
+5. Start Section 6: Testing - 04.12.2019
+	

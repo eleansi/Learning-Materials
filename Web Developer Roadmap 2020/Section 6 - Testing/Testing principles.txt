@@ -1,0 +1,3 @@
+Spies - Provides information about functions (How many times they were called, in what cases, by who)
+Stubbing - Replaces selected functions with a function to ensure that the expected behaviour happens
+Mocks - It's like faking a function or a bihaviour to dest a different parts of a process
