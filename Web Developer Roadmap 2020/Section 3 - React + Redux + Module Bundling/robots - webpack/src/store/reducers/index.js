@@ -3,6 +3,6 @@ import { requestUsers } from './fetchUsersReducer';
 import { searchRobots } from './searchUsersReducer';
 
 export default combineReducers({
-    users: requestUsers,
-    search: searchRobots
+  users: requestUsers,
+  search: searchRobots,
 });

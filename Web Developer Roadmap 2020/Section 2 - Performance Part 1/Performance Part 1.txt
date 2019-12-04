@@ -7,3 +7,7 @@ https://99designs.com/blog/tips/image-file-types/
 https://www.sitepoint.com/gif-png-jpg-which-one-to-use/
 
 npm audit
+
+// "webpack": "^4.41.2",
+// "webpack-cli": "^3.3.10",
+// "webpack-dev-server": "^3.9.0"

@@ -1,0 +1,13 @@
+{
+    "baseUrl": "http://localhost:3000/",
+    "projectId": "1ptxf8",
+    "integrationFolder": "cypress/integration",
+    "fixturesFolder": "cypress/fixtures",
+    "pluginsFolder": "cypress/plugins",
+    "supportFile": "cypress/support/index.js",
+    "viewportWidth": 1200,
+    "viewportHeight": 900,
+    "video": true,
+    "videoUploadOnPasses": false,
+    "reporter": "junit"
+}

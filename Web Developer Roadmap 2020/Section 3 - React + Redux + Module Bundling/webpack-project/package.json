@@ -1,0 +1,31 @@
+{
+    "name": "webpack-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    },
+    "author": "Ilian Stefanov",
+    "license": "ISC",
+    "babel": {
+        "presets": [
+            "env",
+            "react"
+        ]
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.6",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.9.0"
+    },
+    "dependencies": {
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0"
+    }
+}

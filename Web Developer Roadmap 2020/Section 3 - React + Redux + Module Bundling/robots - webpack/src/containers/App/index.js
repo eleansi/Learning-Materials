@@ -28,12 +28,8 @@ class App extends Component {
   }
 
   render() {
-    const {
-      searchField, onSearchChange, users, isPending,
-    } = this.props;
-    const filteredRobots = users.filter((robot) => robot.name
-      .toLowerCase()
-      .includes(searchField.toLowerCase()));
+    const { searchField, onSearchChange, users, isPending } = this.props;
+    const filteredRobots = users.filter((robot) => robot.name.toLowerCase().includes(searchField.toLowerCase()));
 
     return (
             <div>

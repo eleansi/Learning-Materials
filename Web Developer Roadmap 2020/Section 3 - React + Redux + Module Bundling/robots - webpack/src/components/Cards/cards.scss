@@ -1,0 +1,29 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.CardsWrapper {
+    // max-width: 797px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in;
+    display: flex;
+    justify-content: center;
+    .CardsCentrate {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: center;
+        .CardsContent {
+            margin: .75rem;
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+}
