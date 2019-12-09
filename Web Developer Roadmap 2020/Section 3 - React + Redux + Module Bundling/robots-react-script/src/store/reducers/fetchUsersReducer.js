@@ -11,7 +11,7 @@ export const requestUsers = (state = initialState, action = {}) => {
     case USERS_FETCH_PENDING:
       return Object.assign({}, state, { isPending: true });
     case USERS_FETCH_SUCCEEDED:
-      return Object.assign({}, state, { users: action.payload, isPending: false });
+      return Object.assign({}, state, { users: action.payload.results, isPending: false });
     case USERS_FETCH_FAILED:
       return Object.assign({}, state, { error: action.payload, isPending: false });
 

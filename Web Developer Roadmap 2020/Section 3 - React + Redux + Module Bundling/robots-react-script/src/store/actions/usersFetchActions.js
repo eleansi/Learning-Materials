@@ -15,6 +15,7 @@ export const requestFetchUsers = () => ({
   type: USERS_FETCH_REQUESTED,
 });
 
+
 export const fetchUsersData = (data) => ({
   type: USERS_FETCH_SUCCEEDED,
   payload: data,

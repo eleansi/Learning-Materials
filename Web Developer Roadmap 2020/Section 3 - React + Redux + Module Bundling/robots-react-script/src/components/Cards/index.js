@@ -11,10 +11,9 @@ const Cards = ({ cards }) => {
                     {cards.map((card, index) => (
                         <Card 
                             key={Date.now() + index}
-                            id={card.id} 
-                            userName={card.userName} 
+                            created={card.userName} 
                             name={card.name} 
-                            email={card.email}
+                            height={card.height}
                         /> 
                     ))}
                     </div>
