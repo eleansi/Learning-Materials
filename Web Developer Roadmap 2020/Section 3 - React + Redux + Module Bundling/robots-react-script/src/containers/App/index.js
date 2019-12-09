@@ -10,6 +10,8 @@ import Loader from '../../components/Loader';
 // Actions
 import { requestFetchUsers } from '../../store/actions/usersFetchActions';
 import { setSearchField } from '../../store/actions/searchUsersActions';
+// Util Functions
+import { filterUsers } from '../../utils/utilFunctions';
 
 const mapStateToProps = (state) => ({
   searchField: state.search.searchField,
@@ -27,15 +29,17 @@ class App extends Component {
     this.props.requestFetchUsers();
   }
 
+  
+
   render() {
     const { searchField, onSearchChange, users, isPending } = this.props;
-    const filteredRobots = users.filter((robot) => robot.name.toLowerCase().includes(searchField.toLowerCase()));
-
+    const filteredUsers = filterUsers(users, searchField);
+    
     return (
             <div>
                 <SearchComponent searchChange={onSearchChange} />
                 {/* <ErrorBoundry> */}
-                    {isPending ? <Loader /> : <Cards cards={filteredRobots} /> }
+                    {isPending ? <Loader /> : <Cards cards={filteredUsers} /> }
                 {/* </ErrorBoundry> */}
             </div>
     );
