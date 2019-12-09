@@ -1,4 +1,4 @@
-import { filterUsers } from '../src/utils/utilFunctions';
+import { filterUsers } from '../utils/utilFunctions';
 
 const usersMock = [ "Leanne", "Michi", "John", "Lea", "Mickey" ];
 const searchInputMock = "Lea";
